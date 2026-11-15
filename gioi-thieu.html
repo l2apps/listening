@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giới thiệu – SmartListen AI</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #0f172a; color: #e2e8f0; line-height: 1.6; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; background: #1e293b; border-bottom: 1px solid #334155; }
+    .logo { font-size: 1.2rem; font-weight: 700; color: #f8fafc; text-decoration: none; }
+    .logo span { color: #38bdf8; }
+    .btn { display: inline-block; padding: 9px 20px; background: #38bdf8; color: #0f172a; border-radius: 6px; font-weight: 700; text-decoration: none; }
+    .btn:hover { opacity: 0.9; }
+    main { max-width: 860px; margin: 0 auto; padding: 0 20px 48px; }
+    .hero { text-align: center; padding: 56px 0 40px; }
+    .hero h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.2; color: #f8fafc; margin-bottom: 14px; }
+    .hero h1 span { color: #38bdf8; }
+    .hero p { color: #94a3b8; max-width: 560px; margin: 0 auto 24px; font-size: 1.05rem; }
+    h2 { font-size: 1.3rem; color: #f8fafc; margin: 40px 0 16px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+    .card { background: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 16px; }
+    .card b { display: block; color: #f8fafc; margin-bottom: 4px; }
+    .card p { color: #94a3b8; font-size: 0.92rem; }
+    .step-num { display: inline-block; width: 28px; height: 28px; line-height: 28px; text-align: center; border-radius: 50%; background: #0284c7; color: #fff; font-weight: 700; font-size: 0.85rem; margin-bottom: 8px; }
+    .note { background: #1e293b; border-left: 3px solid #38bdf8; border-radius: 6px; padding: 14px 16px; color: #cbd5e1; font-size: 0.95rem; }
+    .note + .note { margin-top: 12px; }
+    kbd { background: #334155; border: 1px solid #475569; border-radius: 4px; padding: 1px 7px; font-size: 0.85rem; }
+    footer { text-align: center; color: #64748b; font-size: 0.8rem; padding: 24px 20px 40px; border-top: 1px solid #334155; }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">🎧 SmartListen <span>AI</span></a>
+    <a class="btn" href="index.html">Vào học</a>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Luyện nghe tiếng Anh với <span>TED-Ed</span></h1>
+      <p>Nghe video thật, đọc phụ đề đồng bộ từng câu, bấm vào bất kỳ từ nào để biết nghĩa ngay trong ngữ cảnh.</p>
+      <a class="btn" href="index.html">Bắt đầu học</a>
+    </section>
+
+    <h2>Cách học</h2>
+    <div class="grid">
+      <div class="card"><span class="step-num">1</span><b>Chọn bài</b><p>Mỗi bài là một video ngắn, có ghi sẵn trình độ và thời lượng.</p></div>
+      <div class="card"><span class="step-num">2</span><b>Nghe và theo dõi phụ đề</b><p>Câu đang nói được tô sáng và tự cuộn. Bấm vào một câu để nghe lại từ đó.</p></div>
+      <div class="card"><span class="step-num">3</span><b>Bấm từ để tra</b><p>Thẻ từ vựng hiện loại từ, phiên âm, nghĩa tiếng Việt và câu chứa từ. Bấm ▶ để nghe lại đúng câu.</p></div>
+      <div class="card"><span class="step-num">4</span><b>Làm bài tập</b><p>Cuối bài, tạo câu hỏi trắc nghiệm nghe hiểu để kiểm tra mình đã hiểu bao nhiêu.</p></div>
+    </div>
+
+    <h2>Tính năng</h2>
+    <div class="grid">
+      <div class="card"><b>Phụ đề tương tác</b><p>Đồng bộ theo từng câu, bấm vào dòng để tua.</p></div>
+      <div class="card"><b>Tra từ theo ngữ cảnh</b><p>Nghĩa được chọn đúng với câu bạn đang nghe, không phải nghĩa chung chung.</p></div>
+      <div class="card"><b>Phát lại từng câu</b><p>Nghe lại đúng câu chứa từ, rồi tự dừng.</p></div>
+      <div class="card"><b>Phím tắt</b><p><kbd>Space</kbd> phát/dừng · <kbd>A</kbd> lùi 3 giây · <kbd>D</kbd> tiến 3 giây.</p></div>
+    </div>
+
+    <h2>Cần biết trước khi dùng</h2>
+    <div class="note"><b>Có cần API key không?</b> Học bình thường và tra các từ có sẵn thì không cần. Các từ chưa có sẵn và bài tập trắc nghiệm dùng AI Gemini của Google, nên cần bạn tự nhập Gemini API Key ở góc trên. Key chỉ được lưu trong trình duyệt của bạn và gửi thẳng tới Google, không qua máy chủ nào khác.</div>
+    <div class="note"><b>Nội dung AI có thể sai.</b> Nghĩa và phiên âm do AI tạo ra đôi khi chưa chính xác, hãy đối chiếu với từ điển khi cần.</div>
+    <div class="note"><b>Nguồn nội dung.</b> Video được nhúng từ YouTube và thuộc về TED-Ed/TED, kèm link về bài gốc. Đây là dự án học tập cá nhân, phi thương mại, không liên kết chính thức với TED hay YouTube.</div>
+  </main>
+  <footer>SmartListen AI · Dự án luyện nghe tiếng Anh</footer>
+</body>
+</html>
